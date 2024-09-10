@@ -46,7 +46,9 @@ To run the project locally, follow these steps:
    git clone https://github.com/yourusername/Lane-Detection-System.git
   ```
 
+
 2.Install the required dependencies:
+
 
 ```bash
 pip install -r requirements.txt
