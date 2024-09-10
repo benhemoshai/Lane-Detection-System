@@ -63,9 +63,25 @@ python night_drive.py
 ```
 
 ## Project Structure
+
+```bash
 Lane-Detection-System/
 │
 ├── day_drive_lane_detection.py          # Lane detection for day driving video
 ├── night_drive_lane_detection.py        # Lane detection for night driving video
 ├── requirements.txt                     # List of dependencies (e.g., OpenCV, NumPy)
 └── README.md                            # Project documentation
+```
+
+## Techniques and Image Processing
+- **Gaussian Blurring**: Reduces noise in the frames to make lane detection more accurate.
+- **Canny Edge Detection**: Identifies edges in the frame, a crucial step before detecting lane lines.
+- **Hough Line Transformation**: Detects straight lines in the frame based on the edges found.
+- **Line Smoothing**: Slope and intercepts of detected lines are averaged to provide stable lane lines.
+- **Polygon Overlay**: A trapezoid shape is drawn over the detected lanes to enhance the visibility of the road structure.
+
+## Output Videos
+Processed videos are saved as output files showing the detected lanes overlaid on the road:
+
+- day-drive-output.avi
+- night-drive-output.avi
