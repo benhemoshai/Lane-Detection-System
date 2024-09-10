@@ -46,13 +46,11 @@ To run the project locally, follow these steps:
    git clone https://github.com/yourusername/Lane-Detection-System.git
   ```
 
-
 2.Install the required dependencies:
 
-
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3.Download the input video files from the links provided above.
 
